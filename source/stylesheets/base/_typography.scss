@@ -1,24 +1,117 @@
 // Typefaces
-$typeface-sans:  "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+$typeface-sans:  'Roboto', 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+$typface-condensed: 'Roboto Condensed', 'Impact', sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
-p, a, h1, h2, h3, h4, h5, label {
-  color: inherit;
-  font-family: inherit;
-}
 
-h1 {}
+// $BaseType
+// -------------------------------------//
 
-h2 {}
+$font-weight: normal;
+$line-height: 1.65;
+$font-size: 112.5; // percentage value (16 * 112.5% = 18px)
+$font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
+$font-family: $typeface-sans; // Non-font-face font-stack
+$custom-font-family: false; // Custom font-face stack, if set will be added to the $font-family
+$modular-scale: 1.618;
 
-h3 {}
 
-h4 {}
+// $Paragraphs
+// -------------------------------------//
 
-h5 {}
+// Text Indentation Value
+$indent-val: 1.5em;
 
-h6 {}
+// Paragraph Styling Boolean
+// 'false' means no vertical whitespace
+// between subsequent paragraphs.
+$paragraph-vertical-whitespace: true;
 
-p {}
 
-hr {}
+// $Small Print
+// -------------------------------------//
+
+$small-print-size: modular-scale($font-base, -1, $modular-scale);
+
+
+// $Color
+// -------------------------------------//
+
+$body-copy-color: #444;
+$heading-color: #222;
+
+
+// $Ampersand
+// -------------------------------------//
+
+$amp-fontface-name: Ampersand;
+$amp-fontface-source: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua');
+$amp-fontface-fallback: local('Georgia');
+
+// Allows for our ampersand element to have differing
+// font-family from the ampersand unicode font-family.
+$amp-font-family: Verdana, sans-serif;
+
+
+// $Icon-Font-Helper
+// -------------------------------------//
+// ex.1) $icon-fonts: (icon-name);
+// ex.2) $icon-fonts: (icon-name1, icon-name2, icon-name3);
+$icon-fonts: null;
+
+
+// $TypeScale
+// -------------------------------------//
+
+$tera: (modular-scale($font-base, 3, $modular-scale)*1.25);
+$giga: modular-scale($font-base, 3, $modular-scale);
+$mega: (modular-scale($font-base, 2, $modular-scale)*1.25);
+$alpha: modular-scale($font-base, 2, $modular-scale);
+$beta: (modular-scale($font-base, 1, $modular-scale)*1.25);
+$gamma: modular-scale($font-base, 1, $modular-scale);
+$delta: (modular-scale($font-base, 0, $modular-scale)*1.25);
+$epsilon: (modular-scale($font-base, 0, $modular-scale)*1.125);
+$zeta: modular-scale($font-base, 0, $modular-scale);
+
+
+// $TypeScale-Unit
+// -------------------------------------//
+
+$type-scale-unit-value: rem;
+
+
+// $Pull-Quotes
+// -------------------------------------//
+
+$pull-quote-fontsize: 4em;
+$pull-quote-opacity: 0.5;
+$pull-quote-color: #dc976e;
+
+
+// $Citation
+// -------------------------------------//
+
+$cite-display: block;
+$cite-text-align: right;
+$cite-font-size: inherit;
+
+
+// $SmallCaps
+// -------------------------------------//
+
+$small-caps-color: gray;
+$small-caps-weight: 600;
+
+
+// $DropCap
+// -------------------------------------//
+
+$dropcap-float-position: left;
+$dropcap-font-size: 4em;
+$dropcap-font-family: inherit;
+$dropcap-txt-indent: 0;
+$dropcap-margin: inherit;
+$dropcap-padding: inherit;
+$dropcap-color: inherit;
+$dropcap-line-height: 1;
+$dropcap-bg: transparent;
