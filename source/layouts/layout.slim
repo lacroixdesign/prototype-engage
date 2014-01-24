@@ -1,9 +1,5 @@
 doctype html
-<!--[if lt IE 9]> <html lang="en" class="ie8 old-ie"> <![endif]-->
-<!--[if IE 9]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->
 html lang="en"
-  <!--<![endif]-->
   /!
     _
     _
@@ -26,7 +22,7 @@ html lang="en"
 
   head
     meta charset="utf-8"
-    title = title('Deltak Engage')
+    title Deltak Engage
 
     / general meta
     meta name="description" content="FIXME: APPLICATION DESCRIPTION"
@@ -50,14 +46,9 @@ html lang="en"
     / Google Fonts
     link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700|Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css"
 
-    / Typekit -- replace VVVVVVV with the proper kit code
-    / script type="text/javascript" src="//use.typekit.net/VVVVVVV.js"
-    / javascript:
-    /   try{Typekit.load();}catch(e){}
-
     = partial 'layouts/analytics'
 
-  body
+  body class=(current_page.path.include?('v3') ? 'm-alt-bg' : '')
     = partial 'layouts/header'
     = partial 'layouts/breadcrumb'
     = content_for?(:content) ? yield(:content) : yield

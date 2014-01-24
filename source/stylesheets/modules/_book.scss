@@ -142,7 +142,7 @@ h4.m-book-header-v2 {
 
   .book-subchapter--content {
     padding: 0 1em;
-    margin-bottome: 1em;
+    margin-bottom: 1em;
 
     @include media-ie($breakpoint-ipad) {
       padding: 0 2em;
@@ -150,3 +150,88 @@ h4.m-book-header-v2 {
   }
 
 } // .m-book-subchapter
+
+
+// Version 3 ---------------------------
+
+.m-book-title-v3 {
+  background: $near-white;
+  padding: 1.5em 1.5em 0 1.5em;
+  border-bottom: 1px solid $light-grey;
+
+  h1 {
+    color: $orange;
+    font-weight: normal;
+    font-family: $typeface-condensed;
+    text-transform: uppercase;
+  }
+
+}
+
+h4.m-book-header-v3 {
+  width: 100%;
+  background: $near-white;
+  padding: 1em 0.5em;
+  font-weight: normal;
+
+  &:hover {
+    color: $blue;
+    background: darken($near-white, 10);
+  }
+
+  &:active {
+    color: darken($blue, 10);
+    background: darken($near-white, 20);
+  }
+
+  &.is-open {
+    color: darken($blue, 10);
+    background: $near-white;
+  }
+
+} // h4.m-book-header-v3
+
+
+.m-book-subchapter-v3 {
+  background: $near-white;
+  margin-bottom: 0.5em;
+
+  a {
+    text-decoration: none;
+  }
+
+  .book-subchapter--content {
+    padding: 0 1em;
+    margin-bottom: 1em;
+
+    @include media-ie($breakpoint-ipad) {
+      padding: 0 2em;
+    }
+  }
+
+} // .m-book-subchapter-v3
+
+
+h3.m-book-header-v3 {
+  width: 100%;
+  padding: 1em 0.5em;
+  margin-bottom: 0;
+  border-bottom: 1px solid darken($white,5);
+  color: $grey;
+  font-size: 1.125em;
+  font-weight: normal;
+  a { text-decoration: none; }
+
+  &:hover {
+    background: rgba($light-grey, 0.125);
+    border-bottom: 1px solid rgba($light-grey, 0.125);
+    color: $orange;
+  }
+
+  &:active, &.is-open{
+    background: rgba($light-grey, 0.25);
+    border-bottom: 1px solid rgba($light-grey, 0.25);
+    color: $orange;
+  }
+
+} // h3.m-book-header-v3

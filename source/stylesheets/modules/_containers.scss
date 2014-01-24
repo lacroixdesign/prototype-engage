@@ -25,3 +25,16 @@
   }
 
 } // .m-main
+
+
+// Version 3 ---------------------------
+
+.m-main-v3 {
+  border-bottom: 1px solid darken($near-white, 10);
+  background: $white;
+
+} // .m-main
+
+.m-alt-bg {
+  background: darken($light-grey, 5);
+}
