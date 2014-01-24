@@ -1,0 +1,53 @@
+/*  Fontastic
+*/
+
+@charset "UTF-8";
+
+@import "compass";
+
+@include font-face(
+  "fontastic", font-files(
+  "fontastic/fontastic.woff", woff,
+  "fontastic/fontastic.ttf", truetype,
+  "fontastic/fontastic.svg", svg),
+  "fontastic/fontastic.eot"
+);
+
+[data-icon]:before {
+  font-family: "fontastic" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontastic" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add-botton-3:before {
+  content: "\e000";
+}
+.icon-minus-button-3:before {
+  content: "\e001";
+}
+.icon-print-search:before {
+  content: "\e002";
+}
+.icon-print-2:before {
+  content: "\e003";
+}

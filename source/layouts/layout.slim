@@ -59,5 +59,6 @@ html lang="en"
 
   body
     = partial 'layouts/header'
+    = partial 'layouts/breadcrumb'
     = content_for?(:content) ? yield(:content) : yield
     = partial 'layouts/footer'

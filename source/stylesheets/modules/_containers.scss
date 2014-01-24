@@ -1,13 +1,12 @@
 .m-main {
-  @include border-radius(0.5em);
-  // border-top: 0.75em solid $orange;
-  border-right: 1px solid darken($near-white, 5);
+  border-right: 1px solid darken($near-white, 2.5);
   border-bottom: 2px solid darken($near-white, 10);
-  border-left: 1px solid darken($near-white, 5);
+  border-left: 1px solid darken($near-white, 2.5);
+
   background: $white;
 
   @include media-ie($breakpoint-ipad) {
-    @include border-radius(0.5em);
+    @include border-radius(2px);
   }
 
 } // .m-main
