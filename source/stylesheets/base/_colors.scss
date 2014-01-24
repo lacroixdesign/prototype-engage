@@ -1,9 +1,11 @@
 // Colors
 
-$white:       #f9fafa;
-$near-white:  #edeff0;
+$white:       #ffffff;
+$near-white:  darken($white, 5);
+$light-grey:  darken($white, 15);
 $near-black:  #384047;
-$grey:        #b7c0c7;
+$grey:        darken($white, 35);
+$dark-grey:   darken($white, 50);
 
 
 // Brand Palette
@@ -18,5 +20,5 @@ $blue:    #005882;
 $green:   #9e9845;
 
 // Secondary Palette
-$light-beige:   #9e9845;
+$light-beige:   #cdc6b1;
 $cream:         #ffefc1;

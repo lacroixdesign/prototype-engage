@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/lacroixdesign/boarding_pass.git
-  revision: 5812ce911fa80d52006da97f39aece17c7dcb31a
+  revision: 4bc7233beb5e6852118f477a8fbbae1fd699d584
   specs:
     boarding_pass (0.1.9)
       bourbon (>= 3.1)

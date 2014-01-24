@@ -1,6 +1,6 @@
 // Typefaces
 $typeface-sans:  'Roboto', 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
-$typface-condensed: 'Roboto Condensed', 'Impact', sans-serif;
+$typeface-condensed: 'Roboto Condensed', 'Impact', sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 
@@ -9,7 +9,7 @@ $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 $font-weight: normal;
 $line-height: 1.65;
-$font-size: 112.5; // percentage value (16 * 112.5% = 18px)
+$font-size: 100;
 $font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
 $font-family: $typeface-sans; // Non-font-face font-stack
 $custom-font-family: false; // Custom font-face stack, if set will be added to the $font-family
@@ -66,12 +66,12 @@ $icon-fonts: null;
 $tera: (modular-scale($font-base, 3, $modular-scale)*1.25);
 $giga: modular-scale($font-base, 3, $modular-scale);
 $mega: (modular-scale($font-base, 2, $modular-scale)*1.25);
-$alpha: modular-scale($font-base, 2, $modular-scale);
-$beta: (modular-scale($font-base, 1, $modular-scale)*1.25);
-$gamma: modular-scale($font-base, 1, $modular-scale);
-$delta: (modular-scale($font-base, 0, $modular-scale)*1.25);
-$epsilon: (modular-scale($font-base, 0, $modular-scale)*1.125);
-$zeta: modular-scale($font-base, 0, $modular-scale);
+$alpha: 32;
+$beta: 26;
+$gamma: 22;
+$delta: 20;
+$epsilon: 18;
+$zeta: 16;
 
 
 // $TypeScale-Unit

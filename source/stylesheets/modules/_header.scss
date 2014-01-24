@@ -1,0 +1,7 @@
+.m-header {
+  width: 100%;
+  height: $header-height;
+  background: rgba($white, 0.9375);
+  border-bottom: 1px solid $light-grey;
+  > * { height: 100%; }
+}

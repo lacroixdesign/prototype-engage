@@ -58,4 +58,6 @@ html lang="en"
     = partial 'layouts/analytics'
 
   body
+    = partial 'layouts/header'
     = content_for?(:content) ? yield(:content) : yield
+    = partial 'layouts/footer'

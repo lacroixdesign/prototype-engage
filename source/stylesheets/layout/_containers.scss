@@ -2,9 +2,13 @@
 
 .l-constrained {
   @include outer-container;
-  padding-right: $page-gutter;
-  padding-left: $page-gutter;
-}
+
+  @include media-ie($breakpoint-ipad) {
+    padding-right: $page-gutter;
+    padding-left: $page-gutter;
+  }
+
+} // .l-constrained
 
 .l-main {
   @include media-ie($breakpoint-ipad) {
@@ -17,3 +21,4 @@
     @include span-columns(4);
   }
 }
+

@@ -1,0 +1,26 @@
+[data-collapsible-toggle] {
+  display: table;
+  margin-right: 0.5em;
+  cursor: pointer;
+
+  &:before {
+    display: table-cell;
+    width: 1.5em;
+    content: '+';
+    text-align: center;
+  }
+
+  &.is-open:before {
+    content: '-';
+  }
+
+} // [data-collapsible-toggle]
+
+[data-collapsible-content] {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+} // [data-collapsible-content]

@@ -1,5 +1,7 @@
 // Basic Elements
 body {
+  padding-top: $header-height + 20px;
+  background: $near-white;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
@@ -21,6 +23,14 @@ h5 {}
 
 h6 {}
 
-p {}
+p {
+  @include css-hyphens(auto);
+}
 
 hr {}
+
+dt {
+  font-weight: bold;
+}
+
+.blockquote { @include blockquote("-"); }

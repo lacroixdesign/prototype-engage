@@ -1,0 +1,8 @@
+.m-content {
+
+  a {
+    color: $blue;
+    &:hover { color: lighten($blue, 10) }
+    &:active { color: darken($blue, 10) }
+  }
+}

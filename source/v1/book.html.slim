@@ -1,0 +1,53 @@
+section#book
+  .l-constrained
+    .m-main
+      .m-book
+        .m-book-title
+          h1 This is the Title of the Book
+          nav.m-printnav.l-printnav
+            ul
+              li: a(href='#') Print This Page
+              li: a(href='#') Print All Pages
+
+        - 5.times do |i|
+          .l-book-chapter
+            .m-book-chapter(data-collapsible=true)
+              h3.m-book-header(data-collapsible-toggle=true)
+                a href='#' Chapter with Text &amp; Subchapter #{i}
+              .m-book-content(data-collapsible-content=true)
+                .m-content = partial "chapters/chapter-1"
+
+                .l-book-subchapter
+                  .m-book.m-book-subchapter(data-collapsible=true)
+                    h4.m-book-header(data-collapsible-toggle=true)
+                      a href='#' Subchapter Alpha
+                    .m-book-content(data-collapsible-content=true)
+                      .m-content = partial "chapters/chapter-1-alpha"
+
+                .l-book-subchapter
+                  .m-book.m-book-subchapter(data-collapsible=true)
+                    h4.m-book-header(data-collapsible-toggle=true)
+                      a href='#' Subchapter Beta
+                    .m-book-content(data-collapsible-content=true)
+                      .m-content = partial "chapters/chapter-1-beta"
+
+        / .m-book-chapter
+        /   h3: a(href='#') Chapter with Overview Video &amp; Text
+        / .m-book-chapter
+        /   h3 Chapter with Text &amp; Embedded Video
+        / .m-book-chapter
+        /   h3 Chapter with Overview Graphic &amp; Text
+        / .m-book-chapter
+        /   h3 Chapter with Text &amp; Multiple Graphics
+        / .m-book-chapter
+        /   h3 Chapter with Text &amp; Call Out Text
+        / .m-book-chapter
+        /   h3 Chapter with Interactive Graphic (left) &amp; Text Display
+        / .m-book-chapter
+        /   h3 Chapter with Interactive Graphic (horizontal) &amp; Corresponding Text Display
+        / .m-book-chapter
+        /   h3 Chapter with Interactive Graphic, text &amp; call out
+        / .m-book-chapter
+        /   h3 Image Carousel with Changing Captions &amp; Static Text Block
+        / .m-book-chapter
+        /   h3 Image Carousel with Changing Captions
