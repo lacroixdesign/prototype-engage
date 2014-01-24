@@ -2,9 +2,22 @@
 
   padding: 1em 0;
 
+  .content-callout {
+    @include border-radius(0.5em);
+    background: rgba($yellow, 0.5);
+    padding: 1em;
+    }
+
   a {
     color: $blue;
     &:hover { color: lighten($blue, 10) }
     &:active { color: darken($blue, 10) }
   }
+
+  img {
+    border-right: 1px solid $light-grey;
+    border-bottom: 1px solid $grey;
+    border-left: 1px solid $light-grey;
+  }
+
 }

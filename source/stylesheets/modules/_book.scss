@@ -7,7 +7,6 @@
   border-top: 4px solid $orange;
   border-bottom: 1px solid $light-grey;
 
-  // h1 { font-weight: normal; }
 
 }
 
@@ -31,7 +30,7 @@ h3.m-book-header {
     color: darken($blue, 10);
   }
 
-} // h3.m-book-header {
+} // h3.m-book-header
 
 h4.m-book-header {
   font-weight: normal;
@@ -71,3 +70,40 @@ h4.m-book-header {
   }
 
 } //.m-book-content
+
+// Version 2 ---------------------------
+
+.m-book-title-v2 {
+  @include border-top-radius(8px);
+  background: $orange;
+  padding: 1.5em 0 0 1.5em;
+  color: $white;
+
+  h1 {
+    color: $white;
+    font-weight: normal
+  }
+
+}
+
+h3.m-book-header-v2 {
+  width: 100%;
+  padding: 1em 0.5em;
+  margin-bottom: 0;
+  border-bottom: 1px solid darken($white,5);
+  font-weight: normal;
+  a { text-decoration: none; }
+
+  &:hover {
+    background: rgba($blue, 0.0625);
+    border-bottom: 1px solid rgba($blue, 0.0625);
+    color: $blue;
+  }
+
+  &:active, &.is-open{
+    background: rgba($blue, 0.125);
+    border-bottom: 1px solid rgba($blue, 0.125);
+    color: darken($blue, 10);
+  }
+
+} // h3.m-book-header-2

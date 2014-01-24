@@ -4,9 +4,18 @@
 .l-content-right {
 
   @include media-ie($breakpoint-ipad) {
-    width: 50%;
+    width: 35%;
     padding: 0 0 0 1em;
     float: right;
+  }
+}
+
+.l-content-left {
+
+  @include media-ie($breakpoint-ipad) {
+    width: 35%;
+    padding: 0 1em 0 0;
+    float: left;
   }
 
 }
