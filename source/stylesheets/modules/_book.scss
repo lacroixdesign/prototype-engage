@@ -6,8 +6,6 @@
   padding: 1.5em 1.5em 0 1.5em;
   border-top: 4px solid $orange;
   border-bottom: 1px solid $light-grey;
-
-
 }
 
 h3.m-book-header {
@@ -51,15 +49,15 @@ h4.m-book-header {
 
   .book-subchapter--content {
     background: rgba($blue, 0.0625);
-      padding: 0 1em;
-      margin-bottome: 1em;
+    padding: 0 1em;
+    margin-bottom: 1em;
 
     @include media-ie($breakpoint-ipad) {
       padding: 0 2em;
     }
   }
 
-} // .m-book-chapter
+} // .m-book-subchapter
 
 .m-book-content {
   border-bottom: 1px solid darken($white,5);
@@ -73,25 +71,42 @@ h4.m-book-header {
 
 // Version 2 ---------------------------
 
+.m-book {
+  margin-bottom: 2em;
+
+  h1, h2, h3, h4, h5 {
+    color: $near-black;
+  }
+
+}
+
 .m-book-title-v2 {
-  @include border-top-radius(8px);
   background: $orange;
   padding: 1.5em 0 0 1.5em;
   color: $white;
 
   h1 {
     color: $white;
-    font-weight: normal
+    font-family: $typeface-condensed;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 
-}
+    @include media-ie($breakpoint-desktop) {
+      @include border-top-radius(8px);
+  } // @include media-ie($breakpoint-desktop)
+
+} // .m-book-title-v2
 
 h3.m-book-header-v2 {
   width: 100%;
   padding: 1em 0.5em;
   margin-bottom: 0;
   border-bottom: 1px solid darken($white,5);
+  color: $grey;
+  font-family: $typeface-condensed;
   font-weight: normal;
+  text-transform: uppercase;
   a { text-decoration: none; }
 
   &:hover {
@@ -106,4 +121,32 @@ h3.m-book-header-v2 {
     color: darken($blue, 10);
   }
 
-} // h3.m-book-header-2
+} // h3.m-book-header-v2
+
+h4.m-book-header-v2 {
+  font-weight: normal;
+  &:hover { color: $blue; }
+  &:active, &.is-open   { color: darken($blue, 10); }
+}
+
+.m-book-subchapter-v2 {
+  @include border-radius(1em);
+  background: $near-white;
+  border-bottom: 1px solid $light-grey;
+  padding: 1.5em 1.5em 0;
+  margin-bottom: 0.5em;
+
+  a {
+    text-decoration: none;
+  }
+
+  .book-subchapter--content {
+    padding: 0 1em;
+    margin-bottome: 1em;
+
+    @include media-ie($breakpoint-ipad) {
+      padding: 0 2em;
+    }
+  }
+
+} // .m-book-subchapter

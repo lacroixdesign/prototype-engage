@@ -46,12 +46,8 @@
 
   font-size: 0.75em;
 
-    @include media-ie($breakpoint-ipad) {
-    @include span-columns(6);}
-
   ul {
-    background: $white;
-    padding-left: 0;
+    padding: 0.5em;
     margin-top: 0;
     margin-bottom: 0em;
     list-style: none;

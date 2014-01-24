@@ -28,7 +28,7 @@
 
 .l-container-half {
 
-  @include media-ie($breakpoint-ipad) {
+  @include media-ie($breakpoint-desktop) {
     @include span-columns(6);
   }
 }
