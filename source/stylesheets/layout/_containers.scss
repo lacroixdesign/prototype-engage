@@ -22,3 +22,14 @@
   }
 }
 
+.l-container-wrap {
+  @include row;
+}
+
+.l-container-half {
+
+  @include media-ie($breakpoint-ipad) {
+    @include span-columns(6);
+  }
+}
+

@@ -5,13 +5,15 @@
 
   &:before {
     display: table-cell;
-    width: 1.5em;
+    vertical-align: middle;
+    width: 2em;
     content: '\e000';
+    font-family: "fontastic";
     text-align: center;
   }
 
   &.is-open:before {
-    content: '-';
+    content: '\e001';
   }
 
 } // [data-collapsible-toggle]

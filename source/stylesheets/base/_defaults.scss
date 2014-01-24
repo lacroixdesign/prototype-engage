@@ -2,6 +2,7 @@
 body {
   padding-top: $header-height + 20px;
   background: $near-white;
+  color: $near-black;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
@@ -9,6 +10,11 @@ body {
 p, a, h1, h2, h3, h4, h5, label {
   color: inherit;
   font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include css-hyphens(none);
+  color: $black;
 }
 
 h1 {}
@@ -21,7 +27,9 @@ h4 {}
 
 h5 {}
 
-h6 {}
+h6 {
+  margin-bottom: 0.25em;
+}
 
 p {
   @include css-hyphens(auto);
@@ -33,4 +41,20 @@ dt {
   font-weight: bold;
 }
 
-.blockquote { @include blockquote("-"); }
+blockquote {
+  @include blockquote("-");
+  color: $dark-grey;
+  font-style: italic;
+}
+
+figcaption {
+  color: $dark-grey;
+  font-size: 0.85em;
+  margin-bottom: 1.65em;
+  font-style: italic;
+}
+
+img, video, iframe {
+  width: 100%;
+  height: auto;
+}

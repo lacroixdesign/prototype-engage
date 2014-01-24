@@ -3,15 +3,15 @@
 $white:       #ffffff;
 $near-white:  darken($white, 5);
 $light-grey:  darken($white, 10);
-$near-black:  #384047;
 $grey:        darken($white, 35);
-$dark-grey:   darken($white, 50);
+$black:       #1a1a1a;
+$near-black:  lighten($black, 20);
+$dark-grey:   lighten($black, 35);
 
 
 // Brand Palette
 $orange:  #e36416;
 $beige:   #afa68f;
-$black:   #1a1a1a;
 
 // Primary Palette
 $yellow:  #fdb800;

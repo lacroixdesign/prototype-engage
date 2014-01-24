@@ -2,42 +2,62 @@ section#book
   .l-constrained
     .m-main
       .m-book
-        hr
         .m-book-title
           h1 This is the Title of the Book
           nav.m-printnav.l-printnav
             ul
-              li: a(href='#') Print This Page
+              li: a(href='#') Print Single Page
               li: a(href='#') Print All Pages
 
-        - 5.times do |i|
-          .l-book-chapter
-            .m-book-chapter(data-collapsible=true)
-              h3.m-book-header(data-collapsible-toggle=true)
-                a href='#' Chapter with Text &amp; Subchapter #{i}
-              .m-book-content(data-collapsible-content=true)
-                .m-content = partial "v1/chapters/chapter-1"
+        .l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h3.m-book-header(data-collapsible-toggle=true)
+              a href='#' Chapter with Text &amp; Subchapter
+            .m-book-content(data-collapsible-content=true)
+              .m-content = partial "v1/chapters/chapter-1"
 
-                .l-book-subchapter
-                  .m-book.m-book-subchapter(data-collapsible=true)
-                    h4.m-book-header(data-collapsible-toggle=true)
-                      a href='#' Subchapter Alpha
-                    .m-book-content(data-collapsible-content=true)
-                      .m-content = partial "v1/chapters/chapter-1-alpha"
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h4.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Subchapter Alpha
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "v1/chapters/chapter-1-alpha"
 
-                .l-book-subchapter
-                  .m-book.m-book-subchapter(data-collapsible=true)
-                    h4.m-book-header(data-collapsible-toggle=true)
-                      a href='#' Subchapter Beta
-                    .m-book-content(data-collapsible-content=true)
-                      .m-content = partial "v1/chapters/chapter-1-beta"
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h4.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Subchapter Beta
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "v1/chapters/chapter-1-beta"
 
-        / .m-book-chapter
-        /   h3: a(href='#') Chapter with Overview Video &amp; Text
-        / .m-book-chapter
-        /   h3 Chapter with Text &amp; Embedded Video
-        / .m-book-chapter
-        /   h3 Chapter with Overview Graphic &amp; Text
+        .l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h3.m-book-header(data-collapsible-toggle=true)
+              a(href='#') Chapter with Overview Video &amp; Text
+            .m-book-content(data-collapsible-content=true)
+              .l-container-wrap
+                .l-container-half
+                  .m-content = partial "v1/chapters/chapter-2-video"
+                .l-container-half
+                  .m-content = partial "v1/chapters/chapter-2-text"
+
+        .l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h3.m-book-header(data-collapsible-toggle=true)
+              a(href='#') Chapter with Text &amp; Embedded Video
+            .m-book-content(data-collapsible-content=true)
+              .m-content.l-content = partial "v1/chapters/chapter-3"
+
+        .l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h3.m-book-header(data-collapsible-toggle=true)
+              a(href='#') Chapter with Overview Graphic &amp; Text
+            .m-book-content(data-collapsible-content=true)
+              .l-container-wrap
+                .l-container-half
+                  .m-content = partial "v1/chapters/chapter-4-graphic"
+                .l-container-half
+                  .m-content = partial "v1/chapters/chapter-4-text"
         / .m-book-chapter
         /   h3 Chapter with Text &amp; Multiple Graphics
         / .m-book-chapter

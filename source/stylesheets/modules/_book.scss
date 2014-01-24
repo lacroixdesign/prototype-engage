@@ -3,7 +3,8 @@
 }
 
 .m-book-title {
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
+  border-top: 4px solid $orange;
   border-bottom: 1px solid $light-grey;
 
   // h1 { font-weight: normal; }
@@ -33,6 +34,7 @@ h3.m-book-header {
 } // h3.m-book-header {
 
 h4.m-book-header {
+  font-weight: normal;
   &:hover { color: $blue; }
   &:active, &.is-open   { color: darken($blue, 10); }
 
@@ -42,21 +44,30 @@ h4.m-book-header {
 }
 
 .m-book-subchapter {
-  border-bottom: 1px solid $light-grey;
   padding: 1.25em 0 0.125em 0;
 
   a {
     text-decoration: none;
   }
-}
+
+  .book-subchapter--content {
+    background: rgba($blue, 0.0625);
+      padding: 0 1em;
+      margin-bottome: 1em;
+
+    @include media-ie($breakpoint-ipad) {
+      padding: 0 2em;
+    }
+  }
+
+} // .m-book-chapter
 
 .m-book-content {
-  background: darken($white, 2.5);
   border-bottom: 1px solid darken($white,5);
-  padding: 1em;
+  padding: 0 1em;
 
   @include media-ie($breakpoint-ipad) {
-    padding: 1em 2em;
+    padding: 0 2em;
   }
 
 } //.m-book-content

@@ -1,5 +1,7 @@
 .m-content {
 
+  padding: 1em 0;
+
   a {
     color: $blue;
     &:hover { color: lighten($blue, 10) }
