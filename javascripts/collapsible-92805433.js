@@ -1,0 +1,1 @@
+!function(){$(function(){$("[data-collapsible]").each(function(){var t=$(this),l=t.find("[data-collapsible-toggle]").first(),n=t.find("[data-collapsible-content]").first();n.length>0&&l.on("click",function(t){t.preventDefault(),l.toggleClass("is-open"),n.toggleClass("is-open")})})})}();
