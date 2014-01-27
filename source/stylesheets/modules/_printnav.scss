@@ -3,50 +3,6 @@
   font-size: 0.75em;
 
   ul {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style: none;
-  }
-
-  li {
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 1em;
-    color: $grey;
-
-    &:first-child { margin-left: 0; }
-
-    &:before {
-    margin-right: 0.5em;
-    content: '\e003';
-    font-family: "fontastic";
-    }
-
-    &:hover { color: $blue; }
-    &:active { color: darken($blue, 10) }
-
-  } // li
-
-  a {
-    text-decoration: none;
-  }
-
-  @include media-ie($breakpoint-ipad) {
-    text-align: right;
-  }  // @include media-ie($breakpoint-ipad)
-
-} // .m-printnav
-
-
-// Version 2 ---------------------------
-
-
-.m-printnav-v2 {
-
-  font-size: 0.75em;
-
-  ul {
     padding: 0.5em;
     margin-top: 0;
     margin-bottom: 0em;
@@ -80,4 +36,4 @@
     text-align: right;
   }  // @include media-ie($breakpoint-ipad)
 
-} // .m-printnav-v2
+} // .m-printnav

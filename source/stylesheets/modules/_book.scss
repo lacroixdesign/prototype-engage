@@ -30,21 +30,21 @@ h3.m-book-header {
   padding: 1em 0.5em;
   margin-bottom: 0;
   border-bottom: 1px solid darken($white,5);
-  color: $grey;
+  color: $blue;
   font-family: $typeface-condensed;
   font-weight: normal;
   text-transform: uppercase;
   a { text-decoration: none; }
 
   &:hover {
-    background: rgba($blue, 0.0625);
-    border-bottom: 1px solid rgba($blue, 0.0625);
+    background: lighten($yellow, 10);
+    border-bottom: 1px solid lighten($yellow, 5);
     color: $blue;
   }
 
   &:active, &.is-open{
-    background: rgba($blue, 0.125);
-    border-bottom: 1px solid rgba($blue, 0.125);
+    background: $yellow;
+    border-bottom: 1px solid darken($yellow, 5);
     color: darken($blue, 10);
   }
 
