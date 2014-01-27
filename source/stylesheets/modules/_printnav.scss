@@ -12,7 +12,7 @@
   li {
     cursor: pointer;
     display: inline-block;
-    margin-left: 1em;
+    margin: 0 1em;
     color: lighten($orange, 35);
 
     &:first-child { margin-left: 0; }
