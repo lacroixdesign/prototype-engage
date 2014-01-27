@@ -52,7 +52,9 @@ h4.m-book-header {
   margin-bottom: 0;
   padding: 1em 1em;
   border-bottom: 1px solid $white;
+  font-family: $typeface-condensed;
   font-weight: normal;
+  text-transform: uppercase;
 
   &:hover {
     background: lighten($yellow, 20);
