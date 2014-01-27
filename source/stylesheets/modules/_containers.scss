@@ -6,35 +6,7 @@
   background: $white;
 
   @include media-ie($breakpoint-ipad) {
-    @include border-radius(2px);
-  }
-
-} // .m-main
-
-// Version 2 ---------------------------
-
-.m-main-v2 {
-  border-right: 1px solid darken($near-white, 2.5);
-  border-bottom: 2px solid darken($near-white, 10);
-  border-left: 1px solid darken($near-white, 2.5);
-
-  background: $white;
-
-  @include media-ie($breakpoint-ipad) {
     @include border-radius(8px);
   }
 
 } // .m-main
-
-
-// Version 3 ---------------------------
-
-.m-main-v3 {
-  border-bottom: 1px solid darken($near-white, 10);
-  background: $white;
-
-} // .m-main
-
-.m-alt-bg {
-  background: darken($light-grey, 5);
-}
