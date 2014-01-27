@@ -63,9 +63,9 @@ $icon-fonts: null;
 // $TypeScale
 // -------------------------------------//
 
-$tera: (modular-scale($font-base, 3, $modular-scale)*1.25);
-$giga: modular-scale($font-base, 3, $modular-scale);
-$mega: (modular-scale($font-base, 2, $modular-scale)*1.25);
+$tera: 64;
+$giga: 48;
+$mega: 36;
 $alpha: 32;
 $beta: 26;
 $gamma: 22;

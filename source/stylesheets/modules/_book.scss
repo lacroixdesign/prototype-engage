@@ -83,16 +83,22 @@ h4.m-book-header {
 
   .book-subchapter--content {
     background: lighten($cream, 5);
+    padding: 1em;
 
     @include media-ie($breakpoint-ipad) {
-      padding: 0 2em;
+      padding: 2em;
     }
-  }
+
+  } // .book-subchapter--content 
 
 } // .m-book-subchapter
 
 .m-book-content {
   border-bottom: 1px solid $near-white;
+  padding: 1em;
+
+  @include media-ie($breakpoint-ipad) {
+    padding: 2em;
+  }
 
 } //.m-book-content
-
