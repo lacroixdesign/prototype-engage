@@ -4,7 +4,7 @@
   .content-callout {
     @include border-radius(0.5em);
     background: rgba($yellow, 0.5);
-    padding: 1.5em 1.5em 0 1.5em;
+    padding: 1.5em;
   }
 
   a {
