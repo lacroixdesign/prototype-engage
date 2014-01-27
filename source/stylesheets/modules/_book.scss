@@ -29,7 +29,7 @@ h3.m-book-header {
   width: 100%;
   padding: 1em 0.5em;
   margin-bottom: 0;
-  border-bottom: 1px solid darken($white,5);
+  border-bottom: 1px solid $near-white;
   color: $blue;
   font-family: $typeface-condensed;
   font-weight: normal;
@@ -39,37 +39,51 @@ h3.m-book-header {
   &:hover {
     background: lighten($yellow, 10);
     border-bottom: 1px solid lighten($yellow, 5);
-    color: $blue;
+    color: lighten($blue, 5);
   }
 
   &:active, &.is-open{
     background: $yellow;
     border-bottom: 1px solid darken($yellow, 5);
-    color: darken($blue, 10);
+    color: darken($blue, 5);
   }
 
 } // h3.m-book-header
 
 h4.m-book-header {
+  width: 100%;
+  background: $cream;
+  margin-bottom: 0;
+  padding: 1em 1em;
+  border-bottom: 1px solid $white;
   font-weight: normal;
-  &:hover { color: $blue; }
-  &:active, &.is-open   { color: darken($blue, 10); }
-}
+
+  &:hover {
+    background: lighten($yellow, 20);
+    border-bottom: 1px solid lighten($yellow, 10);
+    color: lighten($blue, 5);
+  }
+
+  &:active, &.is-open {
+    background: lighten($yellow, 10);
+    border-bottom: 1px solid lighten($yellow, 5);
+    color: darken($blue, 5);
+  }
+
+} // h4.m-book-header
 
 .m-book-chapter {
 }
 
 .m-book-subchapter {
-  padding: 1.25em 0 0.125em 0;
 
   a {
     text-decoration: none;
   }
 
   .book-subchapter--content {
-    background: rgba($blue, 0.0625);
-    padding: 0 1em;
-    margin-bottom: 1em;
+    background: lighten($cream, 5);
+    border-bottom: 2px solid $white;
 
     @include media-ie($breakpoint-ipad) {
       padding: 0 2em;
@@ -79,12 +93,7 @@ h4.m-book-header {
 } // .m-book-subchapter
 
 .m-book-content {
-  border-bottom: 1px solid darken($white,5);
-  padding: 0 1em;
-
-  @include media-ie($breakpoint-ipad) {
-    padding: 0 2em;
-  }
+  border-bottom: 1px solid $near-white;
 
 } //.m-book-content
 

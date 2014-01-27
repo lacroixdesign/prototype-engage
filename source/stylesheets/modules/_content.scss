@@ -1,17 +1,16 @@
 .m-content {
-
-  padding: 1em 0;
+  padding: 1em;
 
   .content-callout {
     @include border-radius(0.5em);
     background: rgba($yellow, 0.5);
-    padding: 1em;
-    }
+    padding: 1.5em 1.5em 0 1.5em;
+  }
 
   a {
     color: $blue;
-    &:hover { color: lighten($blue, 10) }
-    &:active { color: darken($blue, 10) }
+    &:hover { color: lighten($blue, 5) }
+    &:active { color: darken($blue, 5) }
   }
 
   img {
@@ -20,4 +19,8 @@
     border-left: 1px solid $light-grey;
   }
 
-}
+  @include media-ie($breakpoint-ipad) {
+    padding: 2em;
+  }
+
+} // .m-content
