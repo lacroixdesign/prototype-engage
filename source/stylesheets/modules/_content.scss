@@ -1,16 +1,28 @@
 .m-content {
 
-  .content-callout {
-    background: $green;
-    padding: 1.25em;
-    border: 0.5em solid lighten($green, 10);
-    color: $white;
+  .content-callout--green {
+    @include callout($green)
   }
+
+  .content-callout--red {
+    @include callout($red)
+  }
+
+  .content-callout--beige {
+    @include callout($beige)
+  }
+
+  .content-callout--yellow {
+    @include callout($yellow)
+  }
+
 
   a {
     color: $blue;
     &:hover { color: lighten($blue, 5) }
     &:active { color: darken($blue, 5) }
   }
+
+  img {}
 
 } // .m-content
