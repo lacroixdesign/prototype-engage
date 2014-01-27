@@ -44,8 +44,12 @@ dt {
 
 blockquote {
   @include blockquote("-");
-  color: $dark-grey;
+  color: $green;
   font-style: italic;
+}
+
+.pull-quote:before, .pull-quote:after {
+  color: $green;
 }
 
 figcaption {
