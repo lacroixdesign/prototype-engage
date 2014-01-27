@@ -28,11 +28,16 @@ h4 {}
 h5 {}
 
 h6 {
-  margin-bottom: 0.25em;
+    width: 100%;
+    background: $near-white;
+    padding: 0.5em 1.5em;
+    font-weight: normal;
 }
 
 p {
   @include css-hyphens(auto);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 hr {}
@@ -42,15 +47,26 @@ dt {
 }
 
 blockquote {
-  @include blockquote("-");
+  @include blockquote("—");
   color: $beige;
   font-style: italic;
 }
 
+.pull-quote {
+  
+  &:before {
+    left: 0.5em;
+    color: $beige;
+    font-family: $typeface-serif;
+  }
 
-.pull-quote:before, .pull-quote:after {
-  color: $beige;
-}
+  &:after {
+    right: 0.5em;
+    color: $beige;
+    font-family: $typeface-serif;
+  }
+
+} // .pull-quote
 
 figcaption {
   color: $beige;
