@@ -78,7 +78,7 @@ h4.m-book-header {
   }
 
   .book-subchapter--content {
-    background: lighten($cream, 5);
+    background: lighten($cream, 10);
     padding: 1em;
 
     @include media-ie($breakpoint-ipad) {

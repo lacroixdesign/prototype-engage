@@ -16,6 +16,10 @@
     @include callout($yellow)
   }
 
+  .content-callout--blue {
+    @include callout($blue)
+  }
+
 
   a {
     color: $blue;

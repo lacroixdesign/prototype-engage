@@ -1,6 +1,7 @@
 @mixin callout($color) {
     background: $color;
     padding: 1em 1em 0;
+    margin-bottom: 1em;
     border: 0.5em solid lighten($color, 10);
     color: $white;
   }
