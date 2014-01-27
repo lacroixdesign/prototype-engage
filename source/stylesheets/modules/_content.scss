@@ -20,6 +20,21 @@
     @include callout($blue)
   }
 
+ .content-callout--rounded-red {
+    @include callout-rounded($red)
+  }
+
+ .content-callout--hybrid-green {
+    @include callout-hybrid($green)
+  }
+
+ .content-callout--hybrid-red {
+    @include callout-hybrid($red)
+  }
+
+ .content-callout--hybrid-blue {
+    @include callout-hybrid($blue)
+  }
 
   a {
     color: $blue;

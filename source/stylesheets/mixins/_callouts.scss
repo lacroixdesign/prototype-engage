@@ -5,3 +5,14 @@
     border: 0.5em solid lighten($color, 10);
     color: $white;
   }
+
+@mixin callout-rounded($color) {
+  @include callout($color);
+  @include border-radius(2em);
+}
+
+@mixin callout-hybrid($color) {
+  @include callout($color);
+  @include border-top-left-radius(2em);
+  @include border-bottom-right-radius(2em);
+}
