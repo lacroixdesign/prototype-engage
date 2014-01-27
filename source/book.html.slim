@@ -19,14 +19,21 @@ section#book
               .l-book-subchapter
                 .m-book-subchapter(data-collapsible=true)
                   h4.m-book-header(data-collapsible-toggle=true)
-                    a href='#' Subchapter Alpha
+                    a href='#' Inline Definitions
                   .book-subchapter--content (data-collapsible-content=true)
                     .m-content = partial "chapters/chapter-1-alpha"
 
               .l-book-subchapter
                 .m-book-subchapter(data-collapsible=true)
                   h4.m-book-header(data-collapsible-toggle=true)
-                    a href='#' Subchapter Beta
+                    a href='#' Multi-line Definitions
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "chapters/chapter-1-beta"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h4.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Dictionary-style Definition
                   .book-subchapter--content (data-collapsible-content=true)
                     .m-content = partial "chapters/chapter-1-beta"
 

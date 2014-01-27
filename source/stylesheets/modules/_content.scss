@@ -1,39 +1,39 @@
 .m-content {
 
   .content-callout--green {
-    @include callout($green)
+    @include callout($green);
   }
 
   .content-callout--red {
-    @include callout($red)
+    @include callout($red);
   }
 
   .content-callout--beige {
-    @include callout($beige)
+    @include callout($beige);
   }
 
   .content-callout--yellow {
-    @include callout($yellow)
+    @include callout($yellow);
   }
 
   .content-callout--blue {
-    @include callout($blue)
+    @include callout($blue);
   }
 
  .content-callout--rounded-red {
-    @include callout-rounded($red)
+    @include callout-rounded($red);
   }
 
  .content-callout--hybrid-green {
-    @include callout-hybrid($green)
+    @include callout-hybrid($green);
   }
 
  .content-callout--hybrid-red {
-    @include callout-hybrid($red)
+    @include callout-hybrid($red);
   }
 
  .content-callout--hybrid-blue {
-    @include callout-hybrid($blue)
+    @include callout-hybrid($blue);
   }
 
   a {
