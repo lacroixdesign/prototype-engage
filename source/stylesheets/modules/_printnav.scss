@@ -12,10 +12,9 @@
   li {
     cursor: pointer;
     display: inline-block;
-    margin: 0 1em;
     color: lighten($orange, 35);
 
-    &:first-child { margin-left: 0; }
+    &:first-child { margin-right: 1em; }
 
     &:before {
     margin-right: 0.5em;
@@ -34,6 +33,7 @@
 
   @include media-ie($breakpoint-ipad) {
     text-align: right;
+    &:first-child { margin-right: 0; }
   }  // @include media-ie($breakpoint-ipad)
 
 } // .m-printnav
