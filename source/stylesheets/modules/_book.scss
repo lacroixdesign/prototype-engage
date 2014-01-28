@@ -14,9 +14,11 @@
     font-weight: normal;
     text-transform: uppercase;
   }
+    @include media-ie($breakpoint-ipad) {
+      @include border-top-radius(8px);
+  } // @include media-ie($breakpoint-ipad
 
     @include media-ie($breakpoint-desktop) {
-      @include border-top-radius(8px);
       h1 { font-size: $mega#{px}; }
   } // @include media-ie($breakpoint-desktop)
 
