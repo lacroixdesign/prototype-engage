@@ -15,6 +15,7 @@ p, a, h1, h2, h3, h4, h5, label {
 h1, h2, h3, h4, h5, h6 {
   @include css-hyphens(none);
   color: inherit;
+  font-family: $typeface-condensed;
 }
 
 h1 {}
@@ -27,7 +28,11 @@ h4 {}
 
 h5 {}
 
-h6 {}
+h6 {
+  border-bottom: 0.0625em solid;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.9375em;
+}
 
 p {
   @include css-hyphens(auto);
@@ -48,13 +53,11 @@ blockquote {
 .pull-quote {
 
   &:before {
-    left: 0.5em;
     color: $beige;
     font-family: $typeface-serif;
   }
 
   &:after {
-    right: 0.5em;
     color: $beige;
     font-family: $typeface-serif;
   }
@@ -78,6 +81,7 @@ img, video, iframe {
     @include border-bottom-right-radius(5em);
     display: inline-block;
     background: $blue;
+    border-bottom: none;
     padding: 0.5em 1.5em;
     margin-left: -1.5em;
     color: $white;

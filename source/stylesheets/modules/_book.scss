@@ -5,7 +5,7 @@
 
 .m-book-title {
   background: $orange;
-  padding: 1.5em 0 0 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
   color: $white;
 
   h1 {
@@ -17,6 +17,7 @@
 
     @include media-ie($breakpoint-desktop) {
       @include border-top-radius(8px);
+      h1 { font-size: $mega#{px}; }
   } // @include media-ie($breakpoint-desktop)
 
 } // .m-book-title
@@ -32,15 +33,15 @@ h2.m-book-header {
   a { text-decoration: none; }
 
   &:hover {
-    background: darken($cream, 5);
-    border-bottom: 1px solid darken($cream, 10);
+    background: lighten($light-grey, 5);
+    border-bottom: 1px solid $light-grey;
     color: lighten($blue, 5);
 ;
   }
 
   &:active, &.is-open{
-    background: darken($cream, 10);
-    border-bottom: 1px solid darken($cream, 15);
+    background: $light-grey;
+    border-bottom: 1px solid darken($light-grey, 5);
     color: darken($blue, 5);
   }
 
