@@ -37,14 +37,14 @@ h2.m-book-header {
   &:hover {
     background: lighten($light-grey, 5);
     border-bottom: 1px solid $light-grey;
-    color: lighten($blue, 5);
+    color: lighten($blue, 10);
 ;
   }
 
   &:active, &.is-open{
-    background: $light-grey;
-    border-bottom: 1px solid darken($light-grey, 5);
-    color: darken($blue, 5);
+    background: $blue;
+    border-bottom: 1px solid darken($blue, 5);
+    color: $white;
   }
 
 } // h3.m-book-header

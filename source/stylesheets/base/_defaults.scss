@@ -46,19 +46,27 @@ dt {
 
 blockquote {
   @include blockquote("—");
-  color: $beige;
+  border-left: 0.25em solid;
+  padding-left: 1em;
+  color: $dark-grey;
   font-style: italic;
-}
+
+  aside.pull-quote & {
+    border: none;
+    padding-left: 0;
+  }
+
+} // blockquote
 
 .pull-quote {
 
   &:before {
-    color: $beige;
+    color: inherit;
     font-family: $typeface-serif;
   }
 
   &:after {
-    color: $beige;
+    color: inherit;
     font-family: $typeface-serif;
   }
 
