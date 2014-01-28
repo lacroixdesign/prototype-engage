@@ -27,13 +27,7 @@ h4 {}
 
 h5 {}
 
-h6 {
-    display: inline-block;
-    background: $blue;
-    padding: 0.5em 1.5em;
-    margin-left: -1.5em;
-    color: $white;
-  }
+h6 {}
 
 p {
   @include css-hyphens(auto);
@@ -77,4 +71,14 @@ figcaption {
 img, video, iframe {
   width: 100%;
   height: auto;
+}
+
+.accentuated-title {
+    @include border-top-right-radius(5em);
+    @include border-bottom-right-radius(5em);
+    display: inline-block;
+    background: $blue;
+    padding: 0.5em 1.5em;
+    margin-left: -1.5em;
+    color: $white;
 }
