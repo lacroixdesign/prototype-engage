@@ -28,16 +28,15 @@ h4 {}
 h5 {}
 
 h6 {
-    width: 100%;
-    background: $near-white;
+    display: inline-block;
+    background: $blue;
     padding: 0.5em 1.5em;
-    font-weight: normal;
-}
+    margin-left: -1.5em;
+    color: $white;
+  }
 
 p {
   @include css-hyphens(auto);
-  padding-left: 1.5em;
-  padding-right: 1.5em;
 }
 
 hr {}
@@ -53,7 +52,7 @@ blockquote {
 }
 
 .pull-quote {
-  
+
   &:before {
     left: 0.5em;
     color: $beige;
