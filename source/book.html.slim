@@ -12,6 +12,35 @@ section#book
         article.l-book-chapter
           .m-book-chapter(data-collapsible=true)
             h2.m-book-header(data-collapsible-toggle=true)
+              a href='#' Text Elements
+            .m-book-content(data-collapsible-content=true)
+              .m-content = partial "chapters/chapter-elements"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Inline Definitions
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "chapters/chapter-elements-alpha"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Multi-line Definitions
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "chapters/chapter-elements-beta"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Dictionary-style Definition
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "chapters/chapter-elements-gamma"
+
+
+        article.l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h2.m-book-header(data-collapsible-toggle=true)
               a href='#' Chapter with Text &amp; Subchapter
             .m-book-content(data-collapsible-content=true)
               .m-content = partial "chapters/chapter-1"
@@ -19,23 +48,16 @@ section#book
               .l-book-subchapter
                 .m-book-subchapter(data-collapsible=true)
                   h3.m-book-header(data-collapsible-toggle=true)
-                    a href='#' Inline Definitions
+                    a href='#' Subchapter
                   .book-subchapter--content (data-collapsible-content=true)
                     .m-content = partial "chapters/chapter-1-alpha"
 
               .l-book-subchapter
                 .m-book-subchapter(data-collapsible=true)
                   h3.m-book-header(data-collapsible-toggle=true)
-                    a href='#' Multi-line Definitions
+                    a href='#' Subchapter
                   .book-subchapter--content (data-collapsible-content=true)
                     .m-content = partial "chapters/chapter-1-beta"
-
-              .l-book-subchapter
-                .m-book-subchapter(data-collapsible=true)
-                  h3.m-book-header(data-collapsible-toggle=true)
-                    a href='#' Dictionary-style Definition
-                  .book-subchapter--content (data-collapsible-content=true)
-                    .m-content = partial "chapters/chapter-1-gamma"
 
         article.l-book-chapter
           .m-book-chapter(data-collapsible=true)
@@ -87,12 +109,6 @@ section#book
             .m-book-content(data-collapsible-content=true)
               .m-content.l-content = partial "chapters/chapter-7"
 
-        article.l-book-chapter
-          .m-book-chapter(data-collapsible=true)
-            h2.m-book-header(data-collapsible-toggle=true)
-              a(href='#') Chapter with Text &amp; Call Out Text Options
-            .m-book-content(data-collapsible-content=true)
-              .m-content.l-content = partial "chapters/chapter-8"
         / .m-book-chapter
         /   h3 Chapter with Interactive Graphic (left) &amp; Text Display
         / .m-book-chapter
