@@ -48,7 +48,7 @@ blockquote {
   @include blockquote("—");
   border-left: 0.25em solid;
   padding-left: 1em;
-  color: $dark-grey;
+  color: inherit;
   font-style: italic;
 
   aside.pull-quote & {
