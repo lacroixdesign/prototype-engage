@@ -1,0 +1,64 @@
+section#book
+  .l-constrained
+    .m-main
+      .m-book
+        .m-book-title
+          h1 Unit 1: Human Nature and Economic Activity
+          nav.m-printnav.l-printnav
+            ul
+              li: a(href='#') Single
+              li: a(href='#') All
+
+        article.l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h2.m-book-header(data-collapsible-toggle=true)
+              a href='#' Introduction to Human Nature and Decision-Making
+            .m-book-content(data-collapsible-content=true)
+              .l-container-wrap
+                .l-container-half
+                  .m-content = partial "chapters/chapter-example-1-left"
+                .l-container-half
+                  .m-content = partial "chapters/chapter-example-1-right"
+
+        article.l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h2.m-book-header(data-collapsible-toggle=true)
+              a href='#' Decision-Making
+            .m-book-content(data-collapsible-content=true)
+              .m-content = partial "chapters/chapter-example-2"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Evaluative
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .m-content = partial "chapters/chapter-example-2-1"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Maximizing
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .l-container-wrap
+                      .l-container-half
+                        .m-content = partial "chapters/chapter-example-2-2-left"
+                      .l-container-half
+                        .m-content = partial "chapters/chapter-example-2-2-right"
+
+              .l-book-subchapter
+                .m-book-subchapter(data-collapsible=true)
+                  h3.m-book-header(data-collapsible-toggle=true)
+                    a href='#' Resourceful
+                  .book-subchapter--content (data-collapsible-content=true)
+                    .l-container-wrap
+                      .l-container-half
+                        .m-content = partial "chapters/chapter-example-2-3-left"
+                      .l-container-half
+                        .m-content = partial "chapters/chapter-example-2-3-right"
+
+        article.l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h2.m-book-header(data-collapsible-toggle=true)
+              a href='#' Human Nature vs. Scientific Inquiry
+            .m-book-content(data-collapsible-content=true)
+              .m-content = partial "chapters/chapter-example-3"
