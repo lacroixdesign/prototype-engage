@@ -2,8 +2,8 @@
   border-right: 1px solid darken($near-white, 2.5);
   border-bottom: 2px solid darken($near-white, 10);
   border-left: 1px solid darken($near-white, 2.5);
-
   background: $white;
+  margin-bottom: 3em;
 
   @include media-ie($breakpoint-ipad) {
     @include border-radius(8px);

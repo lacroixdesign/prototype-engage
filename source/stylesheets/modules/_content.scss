@@ -1,20 +1,63 @@
 .m-content {
 
-  .content-callout{
+  .content-callout-transparent-red-grey {
     @include callout($red, $dark-grey);
+  }
 
-    .content-callout--background {
-      @include callout($green, $white);
-    }
+  .content-callout-transparent-green-grey {
+    @include callout($green, $dark-grey);
+  }
 
-   .content-callout--rounded {
-      @include callout-rounded($red, $white);
-    }
+  .content-callout-transparent-blue-grey {
+    @include callout($blue, $dark-grey);
+  }
 
-   .content-callout--hybrid {
-      @include callout-hybrid($blue, $white);
-    }
+  .content-callout-transparent-red {
+    @include callout($red, $red);
+  }
 
+  .content-callout-transparent-green {
+    @include callout($green, $green);
+  }
+
+  .content-callout-transparent-blue {
+    @include callout($blue, $blue);
+  }
+
+  .content-callout-rectangle-red {
+    @include callout-rectangle($red, $white);
+  }
+
+  .content-callout-rectangle-green {
+    @include callout-rectangle($green, $white);
+  }
+
+  .content-callout-rectangle-blue {
+    @include callout-rectangle($blue, $white);
+  }
+
+ .content-callout--rounded-red {
+    @include callout-rounded($red, $white);
+  }
+
+ .content-callout--rounded-green {
+    @include callout-rounded($green, $white);
+  }
+
+ .content-callout--rounded-blue {
+    @include callout-rounded($blue, $white);
+  }
+
+ .content-callout--hybrid-red {
+    @include callout-hybrid($red, $white);
+  }
+
+ .content-callout--hybrid-blue {
+    @include callout-hybrid($blue, $white);
+  }
+
+ .content-callout--hybrid-gren{
+    @include callout-hybrid($green, $white);
   }
 
   a {

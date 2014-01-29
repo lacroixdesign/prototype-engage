@@ -1,25 +1,57 @@
 @mixin callout($bgcolor, $text-color) {
-  padding: 1.5em 1.5em 0.125em;
+  padding: 1.5em 1.5em 0;
   margin-bottom: 1em;
   color: $text-color;
-  font-size: 112.5;
+  font-size: 125%;
+
+  p { font-family: $typeface-serif; }
 
   blockquote {
     border-color: $bgcolor;
     margin: 0;
+    p:last-of-type { margin-bottom: inherit; }
   }
 
 } // @mixin callout($color)
+
+@mixin callout-rectangle($bgcolor, $text-color) {
+  @include callout($bgcolor, $text-color);
+  background: $bgcolor;
+  padding-bottom: 0.0625em;
+
+    blockquote {
+    border-color: none;
+    margin: 0;
+    p:last-of-type { margin-bottom: inherit; }
+  }
+
+} // @mixin callout-rectangle
 
 @mixin callout-rounded($bgcolor, $text-color) {
   @include callout($bgcolor, $text-color);
   @include border-radius(1em);
   background: $bgcolor;
-}
+  padding-bottom: 0.0625em;
+
+    blockquote {
+    border-color: none;
+    margin: 0;
+    p:last-of-type { margin-bottom: inherit; }
+  }
+
+} // @mixin callout-rounded
 
 @mixin callout-hybrid($bgcolor, $text-color) {
   @include callout($bgcolor, $text-color);
   @include border-top-left-radius(1em);
   @include border-bottom-right-radius(1em);
   background: $bgcolor;
-}
+  padding-bottom: 0.0625em;
+
+    blockquote {
+    border-color: none;
+    margin: 0;
+    p:last-of-type { margin-bottom: inherit; }
+  }
+
+} // @mixin callout-hybrid

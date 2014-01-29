@@ -49,7 +49,7 @@ blockquote {
   border-left: 0.25em solid;
   padding-left: 1em;
   color: inherit;
-  font-style: italic;
+  font-family: $typeface-serif;
 
   aside.pull-quote & {
     border: none;
