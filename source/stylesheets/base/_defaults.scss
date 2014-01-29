@@ -94,3 +94,9 @@ img, video, iframe {
     margin-left: -1.5em;
     color: $white;
 }
+
+a {
+  color: $blue;
+  &:hover { color: lighten($blue, 5) }
+  &:active { color: darken($blue, 5) }
+}

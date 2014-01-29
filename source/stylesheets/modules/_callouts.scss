@@ -1,0 +1,11 @@
+.m-callout-red {
+  @include callout($red);
+}
+
+.m-callout-green {
+  @include callout($green);
+}
+
+.m-callout-blue {
+  @include callout($blue);
+}
