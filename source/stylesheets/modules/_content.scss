@@ -1,0 +1,71 @@
+.m-content {
+
+  a {
+    color: $blue;
+    &:hover { color: lighten($blue, 5) }
+    &:active { color: darken($blue, 5) }
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  ul, ol {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+
+    & > ul {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+
+  } // ul, ol
+
+  blockquote {
+    @include blockquote("—");
+    border-left: 0.25em solid;
+    padding-left: 1em;
+    color: inherit;
+    font-family: $typeface-serif;
+
+    aside.pull-quote & {
+      border: none;
+      padding-left: 0;
+    }
+
+  } // blockquote
+
+  .pull-quote {
+
+    &:before {
+      color: inherit;
+      font-family: $typeface-serif;
+    }
+
+    &:after {
+      color: inherit;
+      font-family: $typeface-serif;
+    }
+
+  } // .pull-quote
+
+  figcaption {
+    color: $dark-grey;
+    font-size: 0.85em;
+    margin-bottom: 1.65em;
+    font-style: italic;
+  }
+
+  .accentuated-title {
+      @include border-top-right-radius(5em);
+      @include border-bottom-right-radius(5em);
+      display: inline-block;
+      background: $blue;
+      border-bottom: none;
+      padding: 0.5em 1.5em;
+      margin-left: -1.5em;
+      color: $white;
+  }
+
+} // .m-content
+
