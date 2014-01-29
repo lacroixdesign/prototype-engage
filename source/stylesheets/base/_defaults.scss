@@ -40,4 +40,7 @@ p {
 
 hr {}
 
-
+img, video, iframe {
+  width: 100%;
+  height: auto;
+}
