@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  border-top: 1px solid $blue;
+  border-bottom: 2px solid $blue;
+
+  tbody {
+
+    th {
+      color: $red;
+    }
+
+  } // tbody
+
+  thead {
+
+    th {
+      padding: 1em 1em 0;
+      color: $green;
+    }
+
+  } // thead
+
+  tr:nth-of-type(even) {
+    background: lighten($near-white, 2.5);
+  }
+
+  th {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  td, th {
+    padding: 1.25em 1em;
+    text-align: left;
+  }
+
+} // .table
+
+.table-title {
+  border-top: 2px solid;
+  padding: 1em 0.5em 0;
+  color: $blue;
+}

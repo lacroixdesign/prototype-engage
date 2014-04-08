@@ -109,6 +109,13 @@ section#book
             .m-book-content(data-collapsible-content=true)
               .m-content.l-content = partial "chapters/chapter-7"
 
+        article.l-book-chapter
+          .m-book-chapter(data-collapsible=true)
+            h2.m-book-header(data-collapsible-toggle=true)
+              a(href='#') Chapter with Text &amp; Tables
+            .m-book-content(data-collapsible-content=true)
+              .m-content.l-content = partial "chapters/chapter-8"
+
         / .m-book-chapter
         /   h3 Chapter with Interactive Graphic (left) &amp; Text Display
         / .m-book-chapter
