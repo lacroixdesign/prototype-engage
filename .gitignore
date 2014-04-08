@@ -1,2 +1,4 @@
 .bundle/
 build/
+npm-debug.log
+
