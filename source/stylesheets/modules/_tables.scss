@@ -1,43 +1,49 @@
 .table {
+  background: lighten($near-white, 3.75);
   width: 100%;
-  border-top: 1px solid $blue;
   border-bottom: 2px solid $blue;
+  border-right: 1px solid $near-white;
+  border-left: 1px solid $near-white;
+  margin-bottom: 1.5em;
+  font-family: $typeface-serif;
+  vertical-align: top;
 
   tbody {
 
     th {
-      color: $red;
+      color: $blue;
     }
 
   } // tbody
 
   thead {
+    border-bottom:  1px solid $near-white;
 
     th {
-      padding: 1em 1em 0;
-      color: $green;
+      padding: 0.25em 1em;
+      color: $grey;
     }
 
   } // thead
 
   tr:nth-of-type(even) {
-    background: lighten($near-white, 2.5);
+    background: $near-white;
   }
 
   th {
-    text-align: left;
     font-weight: bold;
   }
 
   td, th {
-    padding: 1.25em 1em;
+    padding: 1em;
     text-align: left;
   }
 
 } // .table
 
 .table-title {
-  border-top: 2px solid;
-  padding: 1em 0.5em 0;
+  border-bottom: 2px solid $blue;
+  padding-bottom: 0.25em;
+  margin-bottom: 0;
   color: $blue;
-}
+} // .table-title
